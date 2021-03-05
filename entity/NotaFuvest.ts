@@ -16,7 +16,7 @@ export type NotaFuvest = {
   ano: number;
 };
 
-export const notaFinalValidate = (nota: NotaFuvest): string | null => {
+export const notaFuvestValidate = (nota: NotaFuvest): string | null => {
   if (!["AC", "EP", "PPI"].includes(nota.modalidade))
     return "Modalidade invalida";
 
