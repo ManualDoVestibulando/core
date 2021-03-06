@@ -36,7 +36,7 @@ export const notaFinalFuvest = (nota: NotaFuvest): number =>
   (nota.primeiraFase + nota.segundaFase.dia1 + nota.segundaFase.dia2) / 3;
 
 export const generatePath = (nota: NotaFuvest): string =>
-  `fuvest/${nota.ano}/nota/${nota.instituto}/${nota.curso}`;
+  `fuvest/${nota.ano}/${nota.instituto}/${nota.curso}`;
 
 export const generateNotaJson = (nota: NotaFuvest): string =>
   JSON.stringify(nota);
