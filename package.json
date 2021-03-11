@@ -1,0 +1,9 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Regras de negocio do ManualDoVestibulando",
+  "main": "./lib/index.js",
+  "repository": "git@github.com:ManualDoVestibulando/core.git",
+  "author": "Guilherme Salustiano <guissalustiano@gmail.com>",
+  "license": "MIT"
+}

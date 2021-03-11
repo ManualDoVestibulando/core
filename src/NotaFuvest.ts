@@ -14,7 +14,7 @@ export type NotaFuvest = {
 };
 
 export const notaFuvestValidate = (nota: NotaFuvest): string | null => {
-  if (!["AC", "EP", "PPI"].includes(nota.modalidade))
+if (["AC", "EP", "PPI"].indexOf(nota.modalidade) == -1)
     return "Modalidade invalida";
 
   return null;
