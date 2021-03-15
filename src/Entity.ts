@@ -1,12 +1,17 @@
 export type ManualDoVestibulandoEntity = {
   slogan: string;
+  campus: CampusEntity[];
+};
+
+export type CampusEntity = {
+  nome: string;
+  descrição: string;
   institutos: InstitutoEntity[];
 };
 
 export type InstitutoEntity = {
   nome: string;
   sigla: string;
-  campus: string;
   descrição: string;
   cursos: CursoEntity[];
 };
