@@ -1,10 +1,6 @@
 export type ManualDoVestibulandoEntity = {
-  index: IndexPageEntity;
-  institutos: InstitutoEntity[];
-};
-
-export type IndexPageEntity = {
   slogan: string;
+  institutos: InstitutoEntity[];
 };
 
 export type InstitutoEntity = {
@@ -19,11 +15,12 @@ export type CursoEntity = {
   nome: string;
   descrição: string;
   notas: {
-    fuvest: NotaFuvestEntity;
+    fuvest: NotaFuvestEntity[];
   };
 };
 
 export type NotaFuvestEntity = {
+  id: string;
   modalidade: "AC" | "EP" | "PPI";
   classificação?: number;
   fase1: number;
