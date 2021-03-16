@@ -21,6 +21,7 @@ export type CursoEntity = {
   descrição: string;
   notas: {
     fuvest: NotaFuvestEntity[];
+    enem: NotaEnemEntity[];
   };
 };
 
@@ -34,4 +35,23 @@ export type NotaFuvestEntity = {
   redação: number;
   ano: number;
   final: number;
+};
+
+export type NotaEnemEntity = {
+  modalidade: "AC" | "EP" | "PPI";
+  opção: number;
+  lista_de_espera: "N";
+  ciencias: number;
+  matematica: number;
+  linguas: number;
+  sociais: number;
+  redação: number;
+  redação_c1: number;
+  redação_c2: number;
+  redação_c3: number;
+  redação_c4: number;
+  redação_c5: number;
+  final: number;
+  ano: number;
+  id: string;
 };
